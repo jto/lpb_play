@@ -1,0 +1,10 @@
+@(client: models.Client, comptes: Seq[models.Compte])
+
+@main("Welcome to Play 2.1") {
+	<h1>@client</h1>
+	<ul>
+	@for(c <- comptes) {
+		<li>@c</li>
+	}
+	</ul>
+}

@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /contacts                  controllers.Application.list()
+
+POST    /contacts                  controllers.Application.create()
+
+GET     /contacts/:id              controllers.Application.get(id:Long)
+POST    /contacts/:id              controllers.Application.update(id:Long)
+
+DELETE  /contacts/:id       			controllers.Application.delete(id:Long)
+
